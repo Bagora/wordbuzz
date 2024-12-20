@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #b2beb5, #1b0417, #fae7b5);
+    color: #1b0417;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.navbar {
+    background: linear-gradient(to right, #b2beb5, #1b0417, #fae7b5);
+    color: #fae7b5;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    /* Make the navbar full-width */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e7feff;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #1b0417;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+select {
+    padding: 8px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #cd7f32;
+    color: #1b0417;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #fae7b5;
+}
+
+.output {
+    margin-top: 20px;
+    border: 1px solid #1b0417;
+    padding: 10px;
+    border-radius: 4px;
+}

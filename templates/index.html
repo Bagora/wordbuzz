@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Word Count App{% endblock %}
+
+{% block header %}Word Count App{% endblock %}
+
+{% block content %}
+<form method="post" action="/">
+    <label for="text">Enter Text:</label>
+    <textarea name="text" id="text" rows="4" cols="50" required></textarea>
+
+    <br>
+
+    <label for="format_type">Select Format:</label>
+    <select name="format_type" id="format_type">
+        <option value="none">None</option>
+        <option value="upper">Uppercase</option>
+        <option value="lower">Lowercase</option>
+        <option value="title">Title Case</option>
+    </select>
+    <br>
+    <input type="submit" value="Count and Format">
+</form>
+
+{% if word_count or formatted_text %}
+    <div class="output">
+        {% if word_count %}
+            <p>Word Count: {{ word_count }}</p>
+        {% endif %}
+
+        {% if formatted_text %}
+            <p>{{ formatted_text }}</p>
+        {% endif %}
+    </div>
+{% endif %}
+{% endblock %}
